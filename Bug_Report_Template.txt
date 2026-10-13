@@ -1,0 +1,34 @@
+ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 13-10-2026 | Task 02 - Library Late-Return Fine Calculator
+
+Enrollment No.: 26CE090
+Name: Rutvi Sanghani
+
+SIMPLE BUGS
+Bug | Original problem | Correction made | Why required
+S1 | Navigation target misspelled as #calcuator | Changed target to #calculator | The link now scrolls to the calculator section.
+S2 | Footer used a generic div | Replaced div with semantic footer | Uses the appropriate HTML5 semantic element.
+S3 | Missing colon in background-color declaration | Added the colon | Makes the page background color apply correctly.
+S4 | .pageTitle class selector did not match the heading ID | Changed selector to #pageTitle | The intended heading styling now applies.
+S5 | One was subtracted from late days | Removed - 1 | Calculates using the actual entered number of late days.
+S6 | Processing charge was ₹100 | Corrected it to ₹10 | Matches the stated calculation policy.
+
+CODE COMPLETION / IMPLEMENTATION
+M1: Added UTF-8 charset and responsive viewport metadata.
+M2: Added semantic aside with the Important Note heading and input reminder.
+M3: Set navigation to display:flex with justify-content:space-between.
+M4: Set the two information cards to a two-column CSS Grid layout.
+M5: Added a max-width:600px media query to stack cards and navigation vertically.
+M6: Implemented calculateFine(days, books, rate) as days × books × rate.
+D1: Implemented chooseRate(type): Student ₹5, Staff ₹3, Visitor ₹10.
+D2: Implemented calculateTotal to return ₹0 for no fine and otherwise add the processing charge.
+D3: Implemented a for loop showing the cumulative fine for each late day.
+
+FUNCTIONAL TEST
+Test input: 5 late days; 2 books; Student.
+Observed result: Rate ₹5/day/book; basic fine ₹50; processing charge ₹10; total ₹60; cumulative fine after day 5 ₹50.
+Mobile layout checked (Yes/No): Not independently verified on a physical phone; responsive CSS media query included.
+
+GIT VERSION CONTROL
+git log -1 --oneline output: 0fefd72 Complete library late-return fine calculator practical
+GitHub URL (if available): Add the repository URL after uploading to GitHub.
